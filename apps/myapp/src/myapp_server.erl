@@ -10,6 +10,10 @@
 
 -behaviour(gen_server).
 
+-ifdef(TEST).
+-include_lib("eunit/include/eunit.hrl").
+-endif.
+
 %% API
 -export([start_link/0]).
 
@@ -125,3 +129,10 @@ code_change(_OldVsn, State, _Extra) ->
 %%%===================================================================
 %%% Internal functions
 %%%===================================================================
+
+-ifdef(EUNIT).
+
+sample_unit_test() ->
+    true = true.
+
+-endif.
