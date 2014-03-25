@@ -7,3 +7,6 @@ Creating multiple applications within a single erlang node
 - the reltool.config also contains mention of the desired apps in two places.
 
 	- the rel section identifies the applications to "auto start"
+	- the app section describes how the application is included into the node
+	
+	
