@@ -2,3 +2,5 @@ ebin
 .eunit
 logs
 *~
+log/
+deps/
